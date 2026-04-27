@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espace Conseil — Courtier en Assurances & Financements à Carcassonne</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <span class="logo__icon">⚖</span>
+        <div>
+          <span class="logo__name">Espace Conseil</span>
+          <span class="logo__tagline">Carcassonne</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#contact" class="nav__link nav__link--cta">Être rappelé sous 48h</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">🏆 Réponse garantie sous 48h</div>
+        <h1 class="hero__title">
+          Vos assurances et financements,<br />
+          <span class="hero__title--accent">enfin gérés avec une approche humaine</span>
+        </h1>
+        <p class="hero__subtitle">
+          Courtier indépendant à Carcassonne, j'accompagne particuliers et professionnels
+          dans tous leurs besoins en assurances et financements — avec un interlocuteur
+          unique, réactif et de confiance.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">📞 Être rappelé sous 48h</a>
+          <a href="#services" class="btn btn--secondary">Découvrir mes services</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+          <div class="hero__card-icon">🤝</div>
+          <p>Un accompagnement<br /><strong>100% personnalisé</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <section class="trust" id="services">
+    <div class="container">
+      <h2 class="trust__title">Pourquoi choisir Espace Conseil ?</h2>
+      <div class="trust__grid">
+
+        <div class="trust__item">
+          <div class="trust__icon">⚡</div>
+          <h3 class="trust__item-title">Réponse sous 48h garantie</h3>
+          <p class="trust__item-desc">
+            Pas de relance sans fin, pas d'attente administrative. Je m'engage à vous
+            répondre dans les 4 heures ouvrées suivant votre demande.
+          </p>
+        </div>
+
+        <div class="trust__item">
+          <div class="trust__icon">👤</div>
+          <h3 class="trust__item-title">Un interlocuteur unique de A à Z</h3>
+          <p class="trust__item-desc">
+            Vous avez un contact dédié, pas un plateau téléphonique. De la première
+            demande à la gestion de vos contrats, c'est toujours moi qui vous réponds.
+          </p>
+        </div>
+
+        <div class="trust__item">
+          <div class="trust__icon">🛡</div>
+          <h3 class="trust__item-title">Assurances & financements, tout en un</h3>
+          <p class="trust__item-desc">
+            RC Pro, MRH, santé, prévoyance, prêts professionnels et financement
+            d'équipement — une seule porte d'entrée pour tous vos besoins.
+          </p>
+        </div>
+
+        <div class="trust__item">
+          <div class="trust__icon">🧾</div>
+          <h3 class="trust__item-title">Facturation automatisée & sans erreur</h3>
+          <p class="trust__item-desc">
+            Votre gestion administrative simplifiée. Vos documents sont traités avec
+            rigueur et précision, sans que vous ayez à vous en préoccuper.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <h2 class="contact__title">Parlons de votre projet</h2>
+        <p class="contact__subtitle">
+          Remplissez le formulaire ci-contre, je vous rappelle sous 48h pour faire le
+          point sur vos besoins en assurances et financements.
+        </p>
+
+        <div class="contact__details">
+          <div class="contact__detail">
+            <span class="contact__detail-icon">📍</span>
+            <div>
+              <strong>Adresse</strong>
+              <p>Carcassonne, Aude (11)</p>
+            </div>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-icon">📞</span>
+            <div>
+              <strong>Téléphone</strong>
+              <p><a href="tel:+33000000000">Disponible sur demande</a></p>
+            </div>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:contact@espaceconseil.fr">contact@espaceconseil.fr</a></p>
+            </div>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-icon">🕐</span>
+            <div>
+              <strong>Horaires</strong>
+              <p>Lun – Ven : 9h – 18h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form-wrapper">
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="nom">Nom <span class="form__required">*</span></label>
+              <input class="form__input" type="text" id="nom" name="nom" placeholder="Dupont" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="prenom">Prénom <span class="form__required">*</span></label>
+              <input class="form__input" type="text" id="prenom" name="prenom" placeholder="Jean" required />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="email">Email <span class="form__required">*</span></label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="jean.dupont@email.fr" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="telephone">Téléphone</label>
+              <input class="form__input" type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="entreprise">Entreprise</label>
+            <input class="form__input" type="text" id="entreprise" name="entreprise" placeholder="Nom de votre société (si applicable)" />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="besoin">Besoin / Projet <span class="form__required">*</span></label>
+            <textarea
+              class="form__input form__textarea"
+              id="besoin"
+              name="besoin"
+              placeholder="Décrivez votre besoin ou projet en quelques lignes…"
+              maxlength="1000"
+              required
+            ></textarea>
+            <span class="form__counter"><span id="charCount">0</span>/1000</span>
+          </div>
+
+          <div class="form__group form__group--checkbox">
+            <label class="form__checkbox-label">
+              <input class="form__checkbox" type="checkbox" id="rgpd" name="rgpd" required />
+              <span class="form__checkbox-custom"></span>
+              <span class="form__checkbox-text">
+                J'accepte que mes données soient traitées dans le cadre de ma demande,
+                conformément à la <a href="#" class="form__link">politique de confidentialité</a>.
+              </span>
+            </label>
+          </div>
+
+          <button class="btn btn--primary btn--full" type="submit" id="submitBtn">
+            <span class="btn__text">Envoyer ma demande</span>
+            <span class="btn__loader" hidden>⏳ Envoi en cours…</span>
+          </button>
+
+          <div class="form__success" id="formSuccess" hidden>
+            ✅ Votre demande a bien été envoyée ! Je vous recontacte sous 48h.
+          </div>
+          <div class="form__error" id="formError" hidden>
+            ❌ Une erreur est survenue. Veuillez réessayer ou m'écrire directement par email.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon">⚖</span>
+        <span class="logo__name">Espace Conseil</span>
+      </div>
+      <p class="footer__copy">© 2026 Espace Conseil — Courtier indépendant à Carcassonne</p>
+      <nav class="footer__nav">
+        <a href="#" class="footer__link">Mentions légales</a>
+        <a href="#" class="footer__link">Politique de confidentialité</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
