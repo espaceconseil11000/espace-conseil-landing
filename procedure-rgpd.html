@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Procédure interne RGPD — Espace Conseil (Usage interne)</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal { max-width: 860px; margin: 60px auto; padding: 0 24px 80px; }
+    .legal h1 { font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 6px; }
+    .legal .badge-interne { display: inline-block; background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; padding: 4px 12px; border-radius: 99px; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 8px; }
+    .legal .legal__date { color: var(--color-muted); font-size: .9rem; margin-bottom: 48px; display: block; }
+    .legal h2 { font-size: 1.2rem; font-weight: 700; color: var(--color-primary); margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--color-accent); }
+    .legal h3 { font-size: 1rem; font-weight: 700; color: var(--color-accent); margin: 24px 0 8px; }
+    .legal p, .legal li { font-size: .95rem; color: #374151; line-height: 1.75; }
+    .legal ul, .legal ol { padding-left: 24px; margin: 8px 0 16px; }
+    .legal li { margin-bottom: 8px; }
+    .legal a { color: var(--color-accent); text-decoration: underline; }
+    .legal .step { background: #f8f9fb; border: 1px solid var(--color-border); border-radius: 12px; padding: 20px 24px; margin: 12px 0; }
+    .legal .step strong { color: var(--color-primary); }
+    .legal .highlight-box { background: #f0f4ff; border-left: 4px solid var(--color-primary); padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+    .legal .highlight-box p { margin: 0; }
+    .legal .warning-box { background: #fff7ed; border-left: 4px solid #f97316; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+    .legal .warning-box p { margin: 0; }
+    .legal table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .88rem; }
+    .legal th { background: var(--color-primary); color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
+    .legal td { padding: 10px 14px; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+    .legal tr:nth-child(even) td { background: #f8f9fb; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--color-primary); font-weight: 600; font-size: .9rem; margin-bottom: 32px; }
+    .back-link:hover { color: var(--color-accent); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <img src="logo.png" alt="Espace Conseil" class="logo__img" />
+      </div>
+    </div>
+  </header>
+
+  <main class="legal">
+    <span class="badge-interne">📋 Document interne — Ne pas diffuser</span>
+    <h1>Procédure de traitement des droits RGPD</h1>
+    <span class="legal__date">EURL Espace Conseil Carcassonne — Rédigé par Steve Cassagne — Mai 2026</span>
+
+    <div class="highlight-box">
+      <p><strong>Objet :</strong> Ce document décrit la procédure à suivre lorsqu'une personne exerce ses droits RGPD (accès, rectification, suppression, portabilité, opposition). Il est destiné à un usage interne exclusif.</p>
+    </div>
+
+    <!-- RÉCEPTION -->
+    <h2>1. Réception d'une demande d'exercice de droits</h2>
+    <p>Les demandes d'exercice de droits sont reçues via :</p>
+    <ul>
+      <li>Email à <a href="mailto:contact@espace-conseil.fr">contact@espace-conseil.fr</a> avec l'objet <strong>« Exercice de mes droits RGPD »</strong></li>
+      <li>Courrier postal : 46 rue Fernandel, Rond Point de Grazailles, 11000 Carcassonne</li>
+    </ul>
+
+    <h3>Étapes immédiates à la réception</h3>
+    <div class="step">
+      <p><strong>Étape 1 — Accuser réception</strong> : Répondre à l'expéditeur sous 48h ouvrées pour confirmer la bonne réception de sa demande et préciser le délai de traitement (1 mois maximum).</p>
+    </div>
+    <div class="step">
+      <p><strong>Étape 2 — Vérifier l'identité</strong> : Si le demandeur est inconnu ou si la demande porte sur des données sensibles, demander une pièce d'identité (carte nationale d'identité, passeport). Ne pas traiter la demande avant confirmation.</p>
+    </div>
+    <div class="step">
+      <p><strong>Étape 3 — Consigner la demande</strong> : Noter dans le registre RGPD (onglet dédié du Google Sheet) : date de réception, type de droit, identité du demandeur, actions réalisées, date de réponse.</p>
+    </div>
+
+    <div class="warning-box">
+      <p>⚠️ <strong>Délai légal :</strong> La réponse doit intervenir dans un délai d'<strong>un mois maximum</strong> à compter de la réception de la demande. En cas de demande complexe, ce délai peut être prolongé de deux mois supplémentaires, à condition d'en informer le demandeur dans le premier mois.</p>
+    </div>
+
+    <!-- DROIT D'ACCÈS -->
+    <h2>2. Droit d'accès (art. 15 RGPD)</h2>
+    <p>La personne demande à recevoir une copie de toutes les données la concernant.</p>
+
+    <h3>Où chercher les données ?</h3>
+    <ul>
+      <li><strong>Google Sheets (CRM)</strong> : filtrer sur le nom / email du demandeur, copier toutes les lignes correspondantes.</li>
+      <li><strong>Gmail</strong> : rechercher l'adresse email du demandeur, récupérer tous les échanges.</li>
+      <li><strong>Logs n8n</strong> : rechercher les exécutions liées à cet email dans l'historique des workflows.</li>
+      <li><strong>Formulaire web</strong> : les données sont transmises via webhook, vérifier le Google Sheet.</li>
+    </ul>
+
+    <h3>Réponse à envoyer</h3>
+    <div class="step">
+      <p>Envoyer un email avec en pièce jointe un fichier CSV ou PDF récapitulant toutes les données trouvées, accompagné de la liste des sous-traitants auxquels ces données ont été transmises.</p>
+    </div>
+
+    <!-- DROIT DE RECTIFICATION -->
+    <h2>3. Droit de rectification (art. 16 RGPD)</h2>
+    <p>La personne demande la correction de données inexactes ou incomplètes.</p>
+    <ol>
+      <li>Identifier la ou les lignes concernées dans le <strong>Google Sheet</strong>.</li>
+      <li>Modifier les données incorrectes directement dans le tableau.</li>
+      <li>Si des emails ont été envoyés avec les données incorrectes, noter la correction dans le registre RGPD (impossibilité de modifier les emails déjà envoyés).</li>
+      <li>Confirmer par email la rectification effectuée.</li>
+    </ol>
+
+    <!-- DROIT À L'EFFACEMENT -->
+    <h2>4. Droit à l'effacement / « droit à l'oubli » (art. 17 RGPD)</h2>
+    <p>La personne demande la suppression de toutes ses données.</p>
+
+    <div class="warning-box">
+      <p>⚠️ L'effacement n'est pas possible si les données sont nécessaires au respect d'une obligation légale (ex. : données de facturation à conserver 10 ans). Dans ce cas, expliquer clairement au demandeur les données qui ne peuvent pas être supprimées et pourquoi.</p>
+    </div>
+
+    <h3>Actions à réaliser</h3>
+    <ol>
+      <li><strong>Google Sheets</strong> : supprimer la ou les lignes correspondant au demandeur.</li>
+      <li><strong>Gmail</strong> : supprimer les emails d'échange avec cette personne (si pas d'obligation légale de conservation).</li>
+      <li><strong>n8n</strong> : supprimer les logs d'exécution liés à cet email si accessible.</li>
+      <li><strong>Autres outils</strong> (Buffer, Replicate, etc.) : vérifier si des données ont été transmises et en demander la suppression auprès du sous-traitant concerné.</li>
+      <li>Confirmer par email la suppression effectuée en détaillant ce qui a été supprimé et ce qui a été conservé (avec justification légale).</li>
+    </ol>
+
+    <!-- DROIT À LA PORTABILITÉ -->
+    <h2>5. Droit à la portabilité (art. 20 RGPD)</h2>
+    <p>La personne demande à recevoir ses données dans un format structuré et lisible par machine.</p>
+    <ol>
+      <li>Dans le Google Sheet, filtrer les données du demandeur.</li>
+      <li>Exporter la sélection au format <strong>CSV</strong> (Fichier → Télécharger → CSV).</li>
+      <li>Envoyer le fichier CSV en pièce jointe par email.</li>
+    </ol>
+
+    <!-- DROIT D'OPPOSITION -->
+    <h2>6. Droit d'opposition (art. 21 RGPD)</h2>
+    <p>La personne s'oppose au traitement de ses données à des fins de prospection ou sur la base de notre intérêt légitime.</p>
+    <ol>
+      <li>Dans le Google Sheet, ajouter une colonne <strong>« Opposition RGPD »</strong> si elle n'existe pas.</li>
+      <li>Marquer la ligne du demandeur avec la valeur <strong>OUI</strong> et la date de la demande.</li>
+      <li>Ne plus contacter cette personne pour des communications commerciales ou de prospection.</li>
+      <li>Confirmer par email la prise en compte de l'opposition.</li>
+    </ol>
+
+    <!-- TABLEAU RÉCAPITULATIF -->
+    <h2>7. Tableau récapitulatif des actions par droit</h2>
+    <table>
+      <thead>
+        <tr><th>Droit</th><th>Action principale</th><th>Délai</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Accès</td><td>Exporter et envoyer les données (CSV/PDF)</td><td>1 mois</td></tr>
+        <tr><td>Rectification</td><td>Modifier dans Google Sheet</td><td>1 mois</td></tr>
+        <tr><td>Effacement</td><td>Supprimer Sheet + Gmail + logs</td><td>1 mois</td></tr>
+        <tr><td>Portabilité</td><td>Export CSV du Sheet</td><td>1 mois</td></tr>
+        <tr><td>Opposition</td><td>Marquer « Opposition RGPD = OUI » dans Sheet</td><td>Immédiat + confirmation sous 1 mois</td></tr>
+        <tr><td>Limitation</td><td>Suspendre tout traitement actif sur ce contact</td><td>1 mois</td></tr>
+      </tbody>
+    </table>
+
+    <!-- CONTACT CNIL -->
+    <h2>8. En cas de litige : réclamation CNIL</h2>
+    <p>Si la personne n'est pas satisfaite de la réponse apportée, elle peut saisir la CNIL :</p>
+    <ul>
+      <li>Site : <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">www.cnil.fr/fr/plaintes</a></li>
+      <li>Courrier : CNIL — 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07</li>
+    </ul>
+
+    <hr style="margin: 48px 0; border: none; border-top: 1px solid var(--color-border);" />
+    <p style="font-size: .85rem; color: var(--color-muted);">Document interne — EURL Espace Conseil Carcassonne — SIRET 827 455 510 00038 — Mai 2026</p>
+  </main>
+
+</body>
+</html>
